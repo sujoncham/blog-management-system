@@ -1,6 +1,7 @@
 import React from 'react';
 
 const NewsLetter = () => {
+    
     return (
         <div className='mb-10 border-b-2'>
             <h1 className='text-2xl font-bold text-center text-gray-500'>Subscribes NewsLetter</h1>

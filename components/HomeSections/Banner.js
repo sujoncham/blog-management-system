@@ -11,6 +11,7 @@ import "swiper/css/pagination";
 
 // import required modules
 import { Autoplay, Navigation, Pagination } from "swiper";
+import Author from '../Author';
 
 const Banner = () => {
 
@@ -59,13 +60,14 @@ function Trendding(){
     return (
         <div className='grid md:grid-cols-2'>
             <div>
-                <Image src='/images/flower.jpg' width={800} height={500} alt='' />
+                <Image src='/images/wall.jpg' width={800} height={500} alt='' />
             </div>
             <div className='flex justify-start flex-col px-10'>
-                <div>
+                <div className='mb-10'>
                 <h3 className='font-bold text-gray-700 text-3xl md:text-4xl py-5'>Business and Travel</h3>
-                <h2 className='font-bold text-gray-500 text-xl md:text-3xl'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda voluptate architecto quibusdam reiciendis dicta commodi perferendis velit consequuntur animi corporis!</h2>
+                <h2 className='text-gray-500 text-xl'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda voluptate architecto quibusdam reiciendis dicta commodi perferendis velit consequuntur animi corporis!</h2>
                 </div>
+                <Author />
             </div>
         </div>
     )
