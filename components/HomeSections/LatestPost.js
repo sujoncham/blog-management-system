@@ -18,7 +18,7 @@ const LatestPost = () => {
     return (
         <section className='container mx-auto md:px-20 py-10'>
             <h1 className='text-center text-3xl font-bold py-5 text-gray-500 uppercase'>Latest post </h1>
-            <div className='grid md:grid-cols-2 lg:grid-cols-3 gap-10'>
+            <div className='grid grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-5 md:gap-10 lg:gap-10 px-2'>
             { 
             data.map(post => <div key={post.id}>
                 <Image className='rounded-md' src={post.img} width={500} height={350} alt='' />

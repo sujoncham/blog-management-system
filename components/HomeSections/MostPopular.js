@@ -32,7 +32,8 @@ const MostPopular = () => {
             <h1 className='text-center text-3xl font-bold py-5 text-gray-500 uppercase'>Most Popular</h1>
             {/* //slider */}
             <Swiper
-                slidesPerView={2}
+                slidesPerView={4}
+                spaceBetween={35}
                 loop={true}
                 autoplay={{
                 delay: 5000,
@@ -44,22 +45,22 @@ const MostPopular = () => {
                 className="mySwiper"
             >
                 {
-                data.map(post => <SwiperSlide key={post.id}>
-                    <div>
-                    <Image src={post.img} width={500} height={400} alt='' />
+                data.map(post => <SwiperSlide className='px-2' key={post.id}>
+                    
+                    <Image src={post.img} width={550} height={400} alt='' />
                     <div className='flex justify-start items-center gap-1'>
-                        <h3 className='text-sm text-sky-500'>Business, Travel</h3>
-                        <span className='text-sm text-gray-500'>- October 18, 2022</span>
+                        <h3 className='text-sm text-sky-500'>{post.category}</h3>
+                        <span className='text-sm text-gray-500'>- {post.postDated}</span>
                     </div>
                     <div className='py-5'>
-                        <h1 className='text-xl font-bold text-gray-700 py-5'>dolorem voluptatibus quia omnis enim id commodi</h1>
-                        <p className='text-gray-500'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore illum cupiditate officiis dolor porro dolorem..</p>
+                        <h1 className='text-lg font-bold text-gray-700 py-2'>{post.title}</h1>
+                        <p className='text-gray-500'>{post.description.slice(0, 80)}</p>
                         <Link href={'/'}>
                             <a className='text-sky-500'>read more...</a>
                         </Link>
                     </div>
                     <Author />
-                </div>
+                
                 </SwiperSlide>)
                 }
               

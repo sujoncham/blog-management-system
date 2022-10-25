@@ -124,7 +124,7 @@ export const posts = [
     "title": "dolorem voluptatibus quia omnis enim id commodi",
     "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore illum cupiditate officiis dolor porro dolorem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore illum cupiditate officiis dolor porro dolorem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore illum cupiditate officiis dolor porro dolorem",
     "img": "/images/post6.jpg",
-    "category": "business",
+    "category": "portfolio",
     "postDated": "October 25, 2022"
   }
 ]

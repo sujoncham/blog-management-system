@@ -1,6 +1,7 @@
 import Head from 'next/head';
 import Banner from "../components/HomeSections/Banner";
 import Categories from "../components/HomeSections/Categories";
+import CounterData from '../components/HomeSections/CounterData';
 import LatestPost from "../components/HomeSections/LatestPost";
 import MostPopular from "../components/HomeSections/MostPopular";
 
@@ -15,6 +16,7 @@ export default function Home() {
       <LatestPost />
       <MostPopular />
       <Categories />
+      <CounterData />
     </>
   )
 }
