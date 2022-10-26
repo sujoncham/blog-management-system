@@ -18,7 +18,7 @@ const fetcher = async() => {
     return data;
 }
 
-const Banner = () => {
+const Trending = () => {
     const { data, error } = useSWR('trending', fetcher)
 
     if (error) return <div>Failed to load</div>
@@ -28,8 +28,8 @@ const Banner = () => {
     return (
         <section className='py-10'>
             <div className='container mx-auto md:px-20'>
-                <div>
-                    <h1 className='text-2xl md:text-5xl text-center py-10 text-gray-600 uppercase'>Trending</h1>
+                <div className='mb-5'>
+                    <h1 className='text-2xl md:text-5xl text-center text-gray-600 uppercase'>Trending</h1>
                 </div>
                 
                 <Swiper
@@ -53,7 +53,7 @@ const Banner = () => {
                             </div>
                             <div className='flex justify-start flex-col px-10'>
                                 <div className='mb-10'>
-                                <h3 className='font-bold text-gray-700 text-3xl md:text-3xl py-5'>{trending.trending}</h3>
+                                <h3 className='font-bold text-gray-600 text-3xl md:text-3xl py-5'>{trending.trending}</h3>
                                 <h2 className='text-gray-500 text-md text-justify'>{trending.description}</h2>
                                 </div>
                             </div>
@@ -71,4 +71,4 @@ const Banner = () => {
 
 
 
-export default Banner;
+export default Trending;

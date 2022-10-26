@@ -29,7 +29,7 @@ const MostPopular = () => {
    
     return (
         <section className='container mx-auto md:px-20 py-10'>
-            <h1 className='text-center text-3xl font-bold py-5 text-gray-500 uppercase'>Most Popular</h1>
+            <h1 className='text-center text-3xl font-bold py-5 text-gray-600 uppercase'>Most Popular</h1>
             {/* //slider */}
             <Swiper
                 slidesPerView={4}
@@ -53,7 +53,7 @@ const MostPopular = () => {
                         <span className='text-sm text-gray-500'>- {post.postDated}</span>
                     </div>
                     <div className='py-5'>
-                        <h1 className='text-lg font-bold text-gray-700 py-2'>{post.title}</h1>
+                        <h1 className='text-lg font-bold text-gray-500 py-2'>{post.title}</h1>
                         <p className='text-gray-500'>{post.description.slice(0, 80)}</p>
                         <Link href={'/'}>
                             <a className='text-sky-500'>read more...</a>

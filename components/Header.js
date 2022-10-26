@@ -6,22 +6,22 @@ const Header = () => {
     const navbar = (
         <>
         <Link href={'/'}>
-            <a className='font-bold uppercase text-md text-gray-700'>Home</a>
+            <a className='font-bold uppercase text-md text-gray-700 hover:text-sky-500'>Home</a>
         </Link>
         <Link href={'/about'}>
-            <a className='font-bold uppercase text-md text-gray-700'>About</a>
+            <a className='font-bold uppercase text-md text-gray-700 hover:text-sky-500'>About</a>
         </Link>
         <Link href={'/services'}>
-            <a className='font-bold uppercase text-md text-gray-700'>Services</a>
+            <a className='font-bold uppercase text-md text-gray-700 hover:text-sky-500'>Services</a>
         </Link>
         <Link href={'/blog'}>
-            <a className='font-bold uppercase text-md text-gray-700'>Blog</a>
+            <a className='font-bold uppercase text-md text-gray-700 hover:text-sky-500'>Blog</a>
         </Link>
         <Link href={'/contact-us'}>
-            <a className='font-bold uppercase text-md text-gray-700'>Contact us</a>
+            <a className='font-bold uppercase text-md text-gray-700 hover:text-sky-500'>Contact us</a>
         </Link>
         <Link href={'/contact-us'}>
-            <a className='font-bold uppercase text-md text-gray-700'>Dashboard</a>
+            <a className='font-bold uppercase text-md text-gray-700 hover:text-sky-500'>Dashboard</a>
         </Link>
         </>
     )
@@ -30,10 +30,10 @@ const Header = () => {
             <div className="xl:container xl:mx-auto flex flex-col items-center sm:flex-row sm:justify-between text-center py-3">
                 <div className='md:flex-none w-[20%] order-2 sm:order-1 flex justify-center items-center gap-3 py-4 sm:py-0'>
                     <Link href={'/'}>
-                        <a className='font-bold uppercase text-3xl text-gray-700 hidden md:hidden lg:flex'>D</a>
+                        <a className='font-bold uppercase text-3xl text-sky-500 hidden md:hidden lg:flex'>D</a>
                     </Link>
                     <Link href={'/'}>
-                        <a className='font-bold uppercase text-3xl text-gray-700 block md:block lg:hidden'>Design</a>
+                        <a className='font-bold uppercase text-3xl text-sky-500 block md:block lg:hidden'>Design</a>
                     </Link>
                     <input type="text" className='input-text' placeholder='search...' />
                 </div>
@@ -42,14 +42,14 @@ const Header = () => {
                     {navbar}
                   
                 </div>
-                    <FaStream size={40} className='p-2 block md:block lg:hidden' />
+                    <FaStream size={40} className='p-2 block md:block lg:hidden text-sky-500' />
                 <div className='w-[20%] order-3 flex justify-center md:justify-end lg:justify-end items-center'>
-                    <div className='flex gap-6'>
-                        <Link href={'/'}><a href=""><FaFacebookF color='#888' /></a></Link>
-                        <Link href={'/'}><a href=""><FaYoutube color='#888' /></a></Link>
-                        <Link href={'/'}><a href=""><FaTwitter color='#888' /></a></Link>
-                        <Link href={'/'}><a href=""><FaInstagram color='#888' /></a></Link>
-                        <Link href={'/'}><a href="">LogIn</a></Link>
+                    <div className='flex justify-start items-center gap-6'>
+                        <Link href={'/'}><a href=""><FaFacebookF className="text-gray-500 hover:text-sky-500" /></a></Link>
+                        <Link href={'/'}><a href=""><FaYoutube className="text-gray-500 hover:text-sky-500" /></a></Link>
+                        <Link href={'/'}><a href=""><FaTwitter className="text-gray-500 hover:text-sky-500" /></a></Link>
+                        <Link href={'/'}><a href=""><FaInstagram className="text-gray-500 hover:text-sky-500" /></a></Link>
+                        <Link href={'/login'}><a className='text-sky-500'>LogIn</a></Link>
                     </div>
                 </div>
             </div>

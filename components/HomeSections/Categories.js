@@ -21,7 +21,7 @@ const Categories = () => {
 
     return (
         <section className='container mx-auto md:px-20 py-10 px-2'>
-            <h1 className='text-center text-3xl font-bold py-5 text-gray-500 uppercase'>Category</h1>
+            <h1 className='text-center text-3xl font-bold py-5 text-gray-600 uppercase'>Category</h1>
             <div className='grid md:grid-cols-3 lg:grid-cols-3 gap-10'>
                 <div className='item'>
                     <h1 className='text-3xl font-bold py-5 text-gray-500 uppercase'>Business</h1>
