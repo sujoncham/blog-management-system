@@ -34,8 +34,7 @@ const LatestPost = () => {
                 </Link>
                 </div>
                 <Author />
-            </div>) 
-            }
+            </div>) }
            </div>
         </section>
     );

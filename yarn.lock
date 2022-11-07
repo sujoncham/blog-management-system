@@ -2391,6 +2391,11 @@
     "loose-envify" "^1.1.0"
     "scheduler" "^0.23.0"
 
+"react-headless-accordion@^1.0.2":
+  "integrity" "sha512-wKBTB/+aAr9MGX5RYi3sdmKOSzevKdmbGRw9JTe7XONiHlTo+pC1OiggL9NUxp5QeQcTnX0rryhuySeGsqBfBg=="
+  "resolved" "https://registry.npmjs.org/react-headless-accordion/-/react-headless-accordion-1.0.2.tgz"
+  "version" "1.0.2"
+
 "react-icons@^4.6.0":
   "integrity" "sha512-rR/L9m9340yO8yv1QT1QurxWQvWpbNHqVX0fzMln2HEb9TEIrQRGsqiNFQfiv9/JEUbyHmHPlNTB2LWm2Ttz0g=="
   "resolved" "https://registry.npmjs.org/react-icons/-/react-icons-4.6.0.tgz"

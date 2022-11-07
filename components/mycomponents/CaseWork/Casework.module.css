@@ -1,0 +1,10 @@
+.hoverContent {
+  transition: all ease-in-out 0.3s;
+}
+.showContent {
+  display: none;
+}
+
+.hoverContent:hover .showContent {
+  display: block;
+}

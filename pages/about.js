@@ -1,10 +1,13 @@
-import React from 'react';
+import AboutHeader from '../components/AboutSections/AboutHeader';
+import OurTeam from '../components/AboutSections/OurTeam';
 
 const About = () => {
     return (
-        <div>
-            <h1>About Page</h1>
-        </div>
+        <>
+        <AboutHeader />
+        <OurTeam />
+        
+        </>
     );
 };
 

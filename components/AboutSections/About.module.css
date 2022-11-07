@@ -1,0 +1,22 @@
+.ourTeam {
+  background-image: url("../../public/images/bg-mision.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  height: 50vh;
+  margin-bottom: 90px;
+  background-position: 0% 100%;
+}
+
+@media only screen and (max-width: 1024px) and (min-width: 767px) {
+  .ourTeam {
+    background-position: center;
+    height: 70vh;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .ourTeam {
+    background-position: center;
+    height: 55vh;
+  }
+}
