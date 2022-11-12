@@ -4,14 +4,9 @@ import { FaFacebookF, FaInstagram, FaTwitter, FaYoutube } from "react-icons/fa";
 import NewsLetter from "./NewsLetter";
 
 const Footer = () => {
-    const bg= {
-        backgroundImage: "url('/images/bg1.png')",
-        backgroundRepeat: 'no-repeat',
-        backgroundPosition: 'bottom left',
-        backgroundSize: '20%'
-    }
+ 
     return (
-        <footer className='bg-gray-300' style={bg}>
+        <footer className='bg-gray-300 footerBg'>
             <div className='container mx-auto md:px-20 py-16 flex justify-center items-center'>
                 <div className='w-full'>
                     <NewsLetter />

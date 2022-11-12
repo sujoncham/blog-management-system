@@ -1,15 +1,11 @@
-import React from 'react';
-
 import { FaStar, FaStarHalfAlt } from "react-icons/fa";
 import { Swiper, SwiperSlide } from "swiper/react";
 
-// Import Swiper styles
 import "swiper/css";
 import "swiper/css/free-mode";
 import "swiper/css/pagination";
 
-
-// import required modules
+import Image from "next/image";
 import { Autoplay, Pagination } from "swiper";
 
 const Testimonial = () => {
@@ -19,35 +15,42 @@ const Testimonial = () => {
             title: "Jony Dane", 
             content: "Consectetur pariatur proident irure proident ea laboris ut do do quis consequat sed officia dolore consequat ut deserunt ea sit sit culpa. Consectetur pariatur proident irure proident ea laboris ut do do quis consequat sed officia dolore consequat ut deserunt ea sit sit culpa.",
             designation:"Director Admin",
-            img:"/images/client1.png"
+            img:"/images/client1.jpg"
         },
         {
             id: 2,
             title: "John Smith", 
             content: "Consectetur pariatur proident irure proident ea laboris ut do do quis consequat sed officia dolore consequat ut deserunt ea sit sit culpa. Consectetur pariatur proident irure proident ea laboris ut do do quis consequat sed officia dolore consequat ut deserunt ea sit sit culpa.",
             designation:"Sales Manager",
-            img:"/images/client2.png"
+            img:"/images/client2.jpg"
         },
         {
             id: 3,
             title: "Ben Stokes", 
             content: "Consectetur pariatur proident irure proident ea laboris ut do do quis consequat sed officia dolore consequat ut deserunt ea sit sit culpa. Consectetur pariatur proident irure proident ea laboris ut do do quis consequat sed officia dolore consequat ut deserunt ea sit sit culpa.",
             designation:"Marketing Manager",
-            img:"/images/client3.png"
+            img:"/images/client3.jpg"
         },
         {
             id: 4,
-            title: "Ben Stokes", 
+            title: "Mike Hase", 
             content: "Consectetur pariatur proident irure proident ea laboris ut do do quis consequat sed officia dolore consequat ut deserunt ea sit sit culpa. Consectetur pariatur proident irure proident ea laboris ut do do quis consequat sed officia dolore consequat ut deserunt ea sit sit culpa.",
             designation:"Marketing Manager",
-            img:"/images/client3.png"
+            img:"/images/client4.jpg"
         },
         {
             id: 5,
-            title: "Ben Stokes", 
+            title: "Trend Bault", 
             content: "Consectetur pariatur proident irure proident ea laboris ut do do quis consequat sed officia dolore consequat ut deserunt ea sit sit culpa. Consectetur pariatur proident irure proident ea laboris ut do do quis consequat sed officia dolore consequat ut deserunt ea sit sit culpa.",
             designation:"Marketing Manager",
-            img:"/images/client3.png"
+            img:"/images/client5.jpg"
+        },
+        {
+            id: 5,
+            title: "Micheal Clark", 
+            content: "Consectetur pariatur proident irure proident ea laboris ut do do quis consequat sed officia dolore consequat ut deserunt ea sit sit culpa. Consectetur pariatur proident irure proident ea laboris ut do do quis consequat sed officia dolore consequat ut deserunt ea sit sit culpa.",
+            designation:"Marketing Manager",
+            img:"/images/client6.jpg"
         },
     ];
     return (
@@ -98,7 +101,7 @@ const Testimonial = () => {
                     </div>
                     <p className="text-[14px] mb-5 text-justify">{data.content}</p>
                     <div className="flex justify-start items-center gap-3">
-                        <img className="w-16 h-16" src={data.img} alt="" />
+                        <Image className="p-1" src={data.img} width={50} height={50} alt="" />
                         <div className="">
                             <h1 className="text-[16px] md:text-[16px] lg:text-xl font-bold">{data.title}</h1>
                             <h3 className="text-[14px]">{data.designation}</h3>

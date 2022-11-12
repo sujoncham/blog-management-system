@@ -27,7 +27,7 @@ const Header = () => {
         </>
     )
     return (
-        <header className='bg-gray-50 px-2 sticky top-0 z-40 shadow-md'>
+        <header className='bg-gray-50 px-2 sticky top-0 z-50 shadow-md'>
             <div className="xl:container xl:mx-auto flex flex-col items-center sm:flex-row sm:justify-between text-center py-3">
                 <div className='md:flex-none w-[100%] md:w-[20%] lg:w-[20%] order-2 sm:order-1 flex justify-center items-center gap-3 py-4 sm:py-0 relative'>
                     <span className='cursor-pointer' onClick={()=>setOpen(!open)}>
