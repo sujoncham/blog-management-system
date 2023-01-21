@@ -21,7 +21,7 @@ const Header = () => {
         <Link href={'/contact-us'}>
             <a className='font-bold uppercase text-md text-gray-700 hover:text-sky-500'>Contact us</a>
         </Link>
-        <Link href={'/contact-us'}>
+        <Link href={'/dashboard'}>
             <a className='font-bold uppercase text-md text-gray-700 hover:text-sky-500'>Dashboard</a>
         </Link>
         </>
@@ -61,7 +61,7 @@ const Header = () => {
                     </div>
                 </div>
             </div>
-            {open ? <div className='w-56 absolute top-0 left-0 flex flex-col gap-3 ml-6 mt-14 bg-gray-200 p-5'> {navbar} </div>: ""}
+            {open ? <div className='w-56 absolute top-0 left-0 flex flex-col gap-3 ml-6 mt-14 bg-gray-200 p-5 lg:hidden'> {navbar} </div>: ""}
 
         </header>
     );
